@@ -1,37 +1,24 @@
-import { BsGithub } from "react-icons/bs";
-import { LiaLinkedin } from "react-icons/lia";
 import NavbarButton from "./navbar_components/NavbarButtons";
+import Socials from "./navbar_components/Socials";
 
 export default function Navbar() {
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <nav className="w-full p-3 bg-primary flex justify-between items-center shadow-md">
-            <div className="flex items-center gap-4">
-                <a
-                    href="https://github.com/ethantiller"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition"
-                    aria-label="GitHub"
-                >
-                    <BsGithub size={35} color="black" />
-                </a>
-                <a
-                    href="https://linkedin.com/in/ethan-tiller-ba5475225"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition"
-                    aria-label="LinkedIn"
-                >
-                    <LiaLinkedin size={40} color="black" />
-                </a>
-            </div>
+            <Socials />
 
             <div className="flex gap-6">
-                <NavbarButton onClick={() => window.location.href = "#home"}>Home</NavbarButton>
-                <NavbarButton onClick={() => window.location.href = "#about"}>About</NavbarButton>
-                <NavbarButton onClick={() => window.location.href = "#qualifications"}>Qualifications</NavbarButton>
-                <NavbarButton onClick={() => window.location.href = "#projects"}>Projects</NavbarButton>
-                <NavbarButton onClick={() => window.location.href = "#contact"}>Contact</NavbarButton>
+                <NavbarButton onClick={() => handleScroll("home")}>Home</NavbarButton>
+                <NavbarButton onClick={() => handleScroll("about")}>About</NavbarButton>
+                <NavbarButton onClick={() => handleScroll("qualifications")}>Qualifications</NavbarButton>
+                <NavbarButton onClick={() => handleScroll("projects")}>Projects</NavbarButton>
+                <NavbarButton onClick={() => handleScroll("contact")}>Contact</NavbarButton>
             </div>
         </nav>
     );
