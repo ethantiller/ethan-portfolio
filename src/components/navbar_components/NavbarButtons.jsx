@@ -1,0 +1,49 @@
+export default function NavbarButton({ children, onClick, className = "" }) {
+    return (
+        <button
+            onClick={onClick}
+            className={`
+                group
+                relative
+                bg-transparent
+                border-none
+                text-black
+                cursor-pointer
+                px-0
+                py-1
+                transition-colors
+                duration-200
+                hover:text-black
+                focus:outline-none
+                focus:text-black
+                font-semibold
+                ${className}
+            `}
+            style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}
+        >
+            <span className="relative flex flex-col items-center">
+                {children}
+                <span
+                    className="
+                        absolute
+                        left-1/2
+                        -translate-x-1/2
+                        bottom-[-8px]
+                        h-1
+                        w-full
+                        scale-x-0
+                        rounded-full
+                        bg-gradient-to-r
+                        from-orange-400
+                        to-red-700
+                        transition-transform
+                        duration-300
+                        ease-out
+                        origin-center
+                        group-hover:scale-x-100
+                    "
+                />
+            </span>
+        </button>
+    );
+}

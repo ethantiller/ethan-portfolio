@@ -1,0 +1,40 @@
+import TimelineItem from "./timeline_components/Timeline";
+import { TIMELINE } from "./timeline_components/TimelineItems";
+
+export default function Qualifications() {
+    return (
+        <div className="min-h-screen flex flex-col items-center py-12" style={{ background: "#FFFEF" }}>
+            <div className="flex flex-col items-center mb-8 w-full gap-17" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+                <div className="w-full flex justify-center mb-4">
+                    <p className="text-center text-7xl font-bold">Qualifications</p>
+                </div>
+                <div className="w-full flex justify-center">
+                    <span className="text-center text-sm font-bold bg-gradient-to-r from-orange-400 to-red-700 bg-clip-text text-transparent">
+                        My Computer Science Journey To Now
+                    </span>
+                </div>
+                <div className="mb-10 flex items-center gap-6 text-sm text-zinc-700">
+                    <span className="flex items-center text-xl gap-2">🎓 <span>Education</span></span>
+                    <span className="flex items-center text-xl gap-2">💼 <span>Experience</span></span>
+                </div>
+            </div>
+
+            {/* Timeline */}
+            <ol className="relative w-full max-w-5xl">
+                {/* Timeline vertical line: only between first and last photo nodes */}
+                <div
+                    className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-zinc-400"
+                    style={{
+                        top: `calc(3rem + 0.5rem)`,
+                        bottom: `calc(3rem + 0.5rem)`,
+                        height: 'auto',
+                    }}
+                />
+
+                {TIMELINE.map((item, idx) => (
+                    <TimelineItem key={item.id} item={item} index={idx} />
+                ))}
+            </ol>
+        </div>
+    );
+}
