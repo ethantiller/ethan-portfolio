@@ -1,6 +1,7 @@
 import Qualifications from "./components/Qualifications";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 export default function App() {
   return (
@@ -13,6 +14,8 @@ export default function App() {
 
       {/* Qualifications Component, includes a vertical timeline of my experience.*/}
       <Qualifications />
+
+      <Projects />
     </>
   );
 }
