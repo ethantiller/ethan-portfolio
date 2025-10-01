@@ -82,7 +82,7 @@ export default function About() {
                                             transition={{ duration: 0.3 }}
                                         >
                                             <img
-                                                src="../public/ethan-headshot.png"
+                                                src="/ethan-portolio/ethan-headshot.png"
                                                 alt="Ethan Tiller"
                                                 className="w-full h-full object-cover"
                                             />
