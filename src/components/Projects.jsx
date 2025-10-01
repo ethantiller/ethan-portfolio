@@ -7,28 +7,28 @@ import "swiper/css/pagination"
 export default function Projects() {
   const projects = [
     {
-      image: "/ethan-portolio/TrafficMonitor.png",
+  image: "/ethan-portfolio/TrafficMonitor.png",
       title: "Traffic Monitor",
       description: "Real-time traffic analysis with advanced monitoring and data visualization",
       tech: ["React", "Node.js", "MongoDB"],
       link: "https://github.com/ethantiller/TrafficMonitorOld"
     },
     {
-      image: "/ethan-portolio/stock.png",
+  image: "/ethan-portfolio/stock.png",
       title: "Stock Analysis Tool",
       description: "Comprehensive market analysis platform with predictive algorithms",
       tech: ["Python", "TensorFlow", "React"],
       link: "https://github.com/ethantiller/Stock-O-Clock"
     },
     {
-      image: "/ethan-portolio/cryptobot.png",
+  image: "/ethan-portfolio/cryptobot.png",
       title: "Crypto Trading Bot",
       description: "Automated trading bot with advanced algorithms and risk management",
       tech: ["JavaScript", "WebSocket", "API"],
       link: "https://github.com/ethantiller/crypto-bot"
     },
     {
-      image: "/ethan-portolio/blackjack.png",
+  image: "/ethan-portfolio/blackjack.png",
       title: "Local Network Blackjack",
       description: "Multiplayer blackjack game for local network play with real-time synchronization",
       tech: ["Socket.io", "Express", "JavaScript"],
