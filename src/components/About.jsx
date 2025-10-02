@@ -55,9 +55,10 @@ export default function About() {
     }, []);
 
     return (
-        <div id="about" className="relative w-full max-w-6xl mx-auto py-20 px-6">
+        <div id="about" data_id="home" className="relative w-full max-w-6xl mx-auto py-20 px-6">
             {/* Animated gradient background */}
             <motion.div
+                id="home"
                 className="absolute inset-0 opacity-20 blur-3xl"
                 animate={{
                     background: [
