@@ -37,7 +37,7 @@ export default function Projects() {
   ]
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div id="projects" className="max-w-6xl mx-auto px-4 py-8">
       <div className="relative">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
