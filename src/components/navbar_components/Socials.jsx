@@ -21,7 +21,7 @@ export default function Socials() {
                         focus:text-black
                         font-semibold
                     `}
-                style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}
+                style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif' }}
                 aria-label="GitHub"
                 onClick={() => window.open("https://github.com/ethantiller", "_blank", "noopener,noreferrer")}
             >
@@ -66,7 +66,7 @@ export default function Socials() {
                         focus:text-black
                         font-semibold
                     `}
-                style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}
+                style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif' }}
                 aria-label="LinkedIn"
                 onClick={() => window.open("https://linkedin.com/in/ethan-tiller-ba5475225", "_blank", "noopener,noreferrer")}
             >

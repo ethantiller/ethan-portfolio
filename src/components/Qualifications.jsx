@@ -14,7 +14,7 @@ export default function Qualifications() {
                     <div className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-r from-red-400/10 to-orange-400/10 rounded-full blur-2xl"></div>
 
                     <div className="relative p-12">
-                        <div className="flex flex-col items-center mb-8 w-full gap-17" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+                        <div className="flex flex-col items-center mb-8 w-full gap-17" style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif' }}>
                             <div className="w-full flex justify-center mb-4">
                                 <p className="text-center text-7xl font-bold">Qualifications</p>
                             </div>

@@ -19,7 +19,7 @@ export default function NavbarButton({ children, onClick, className = "" }) {
                 font-semibold
                 ${className}
             `}
-            style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}
+            style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif' }}
         >
             <span className="relative flex flex-col items-center">
                 {children}
