@@ -7,7 +7,7 @@ export default function About() {
             className="w-full mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 font-medium"
             style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif' }}
         >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center pt-10">
                 <div className="w-full max-w-4xl text-center flex flex-col justify-between items-center gap-10">
                     {/* Top Div for Home */}
                     <div className="w-full flex flex-col gap-6 items-center justify-center">
