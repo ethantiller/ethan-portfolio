@@ -5,29 +5,38 @@ export default function NavbarButton({ children, onClick, className = "" }) {
             className={`
                 group
                 relative
+                w-full
+                rounded-xl
                 bg-transparent
                 border-none
                 text-black
                 cursor-pointer
-                px-1
-                py-1
+                px-3
+                py-2
+                text-left
                 transition-colors
                 duration-200
                 hover:text-black
                 focus:outline-none
                 focus:text-black
                 font-semibold
+                md:w-auto
+                md:rounded-none
+                md:px-1
+                md:py-1
+                md:text-center
                 ${className}
             `}
             style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif' }}
         >
-            <span className="relative flex flex-col items-center">
+            <span className="relative flex w-full flex-col items-start md:items-center">
                 {children}
                 <span
                     className="
                         absolute
-                        left-1/2
-                        -translate-x-1/2
+                        left-0
+                        md:left-1/2
+                        md:-translate-x-1/2
                         bottom-[-8px]
                         h-1
                         w-full
@@ -39,7 +48,8 @@ export default function NavbarButton({ children, onClick, className = "" }) {
                         transition-transform
                         duration-300
                         ease-out
-                        origin-center
+                        origin-left
+                        md:origin-center
                         group-hover:scale-x-100
                     "
                 />

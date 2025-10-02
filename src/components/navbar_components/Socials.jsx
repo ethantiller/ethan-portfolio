@@ -3,7 +3,7 @@ import { LiaLinkedin } from "react-icons/lia";
 
 export default function Socials() {
     return (
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 md:gap-4">
             {/* GitHub Button */}
             <button
                 className={`
