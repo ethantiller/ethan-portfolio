@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className="w-full px-5 py-2.5 rounded-full text-sm font-medium border border-white/10 backdrop-blur-lg shadow-md transition-all duration-300 ease-out flex flex-row items-center justify-between fixed top-0 left-0 z-50"
+            className="w-full px-7 py-2.5 rounded-full text-sm font-medium border border-white/10 backdrop-blur-lg shadow-md transition-all duration-300 ease-out flex flex-row items-center justify-between fixed top-0 left-0 z-50"
             style={liquidGlass}
         >
             <Socials />

@@ -5,13 +5,13 @@ export default function Qualifications() {
     return (
         <div id="qualifications" className="w-full max-w-6xl mx-auto py-20 px-6">
             <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50 rounded-3xl opacity-70"></div>
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-100/20 via-transparent to-purple-100/20 rounded-3xl"></div>
+                {/* Gradient overlay: red-100 to orange-100 */}
+                <div className="absolute inset-0 bg-gradient-to-br from-red-300 via-transparent to-orange-300 rounded-3xl opacity-30 blur-2xl pointer-events-none"></div>
 
                 <div className="relative bg-white/60 backdrop-blur-sm rounded-3xl border border-white/20 shadow-xl overflow-hidden">
                     {/* Floating orbs for visual interest */}
-                    <div className="absolute top-10 right-10 w-20 h-20 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl"></div>
-                    <div className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-r from-purple-400/10 to-pink-400/10 rounded-full blur-2xl"></div>
+                    <div className="absolute top-10 right-10 w-20 h-20 bg-gradient-to-r from-orange-400/20 to-red-400/20 rounded-full blur-xl"></div>
+                    <div className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-r from-red-400/10 to-orange-400/10 rounded-full blur-2xl"></div>
 
                     <div className="relative p-12">
                         <div className="flex flex-col items-center mb-8 w-full gap-17" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>

@@ -9,7 +9,7 @@ export default function NavbarButton({ children, onClick, className = "" }) {
                 border-none
                 text-black
                 cursor-pointer
-                px-0
+                px-1
                 py-1
                 transition-colors
                 duration-200

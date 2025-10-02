@@ -39,7 +39,10 @@ export default function Projects() {
   return (
     <div id="projects" className="max-w-6xl mx-auto px-4 py-8">
       <div className="relative">
-        <Swiper
+        {/* Gradient overlay: orange to red */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-300 via-transparent to-red-300 rounded-3xl opacity-30 blur-2xl pointer-events-none z-0"></div>
+  <div className="relative z-10">
+  <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={24}
           slidesPerView={1}
@@ -120,7 +123,8 @@ export default function Projects() {
               </a>
             </SwiperSlide>
           ))}
-        </Swiper>
+  </Swiper>
+  </div>
 
         {/* Navigation Buttons */}
         <button className="nav-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:border-blue-200 hover:shadow-blue-100/50 transition-all duration-300 disabled:opacity-50">
