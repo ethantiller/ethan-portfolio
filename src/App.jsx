@@ -6,7 +6,7 @@ import Contact from "./components/Contacts";
 
 export default function App() {
   return (
-    <>
+    <div className="bg-zinc-200 min-h-screen min-w-screen">
       {/* Navbar Component that includes socials and buttons to different parts of the page.*/}
       <Navbar />
 
@@ -19,6 +19,6 @@ export default function App() {
       <Projects />
 
       <Contact />
-    </>
+    </div>
   );
 }
