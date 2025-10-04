@@ -62,7 +62,10 @@ export default function Navbar() {
 
                 <div
                     id="primary-navigation"
-                    className={`${isOpen ? "flex" : "hidden"} flex-col gap-2 md:flex md:flex-row md:items-center md:gap-6`}
+                    className={`flex flex-col gap-2
+                        overflow-hidden transition-all duration-300 ease-in-out
+                        ${isOpen ? "max-h-96" : "max-h-0"}
+                        md:flex-row md:items-center md:gap-6 md:overflow-visible md:transition-none md:max-h-none`}
                 >
                     <NavbarButton onClick={() => handleScroll("home")}>Home</NavbarButton>
                     <NavbarButton onClick={() => handleScroll("about")}>About</NavbarButton>
