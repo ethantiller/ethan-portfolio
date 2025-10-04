@@ -37,7 +37,11 @@ export default function Projects() {
   ]
 
   return (
-    <div id="projects" className="max-w-6xl mx-auto px-4 py-8">
+    <div id="projects" className="max-w-6xl mx-auto px-4 py-15">
+      {/* Section Title */}
+      <div className="w-full flex justify-center mb-8">
+        <h2 className="text-center text-4xl md:text-5xl font-bold ">Projects</h2>
+      </div>
       <div className="relative">
         {/* Gradient overlay: orange to red */}
         <div className="absolute inset-0 bg-gradient-to-br from-orange-300 via-transparent to-red-300 rounded-3xl opacity-30 blur-2xl pointer-events-none z-0"></div>

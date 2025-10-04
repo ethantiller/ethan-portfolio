@@ -2,6 +2,7 @@ import Qualifications from "./components/Qualifications";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contacts";
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
       <Qualifications />
 
       <Projects />
+
+      <Contact />
     </>
   );
 }
